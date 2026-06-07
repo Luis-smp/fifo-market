@@ -1,10 +1,10 @@
-# FIFO Marketing
+# FIFO Market
 
 > Projeto acadêmico desenvolvido para a disciplina de Projeto Integrador, com foco na criação de uma plataforma de marketplace voltada para a comercialização de produtos próximos da data de vencimento, promovendo sustentabilidade, redução de desperdícios e economia para consumidores e empresas.
 
 ## 📖 Sobre o Projeto
 
-O FIFO Marketing é uma plataforma digital que conecta empresas e consumidores por meio da venda de produtos próximos ao vencimento. A proposta busca reduzir perdas financeiras causadas pelo descarte de mercadorias ainda aptas para consumo, ao mesmo tempo em que oferece produtos com preços mais acessíveis aos consumidores.
+O FIFO Market é uma plataforma digital que conecta empresas e consumidores por meio da venda de produtos próximos ao vencimento. A proposta busca reduzir perdas financeiras causadas pelo descarte de mercadorias ainda aptas para consumo, ao mesmo tempo em que oferece produtos com preços mais acessíveis aos consumidores.
 
 Inspirado em marketplaces modernos, o sistema foi projetado para proporcionar uma experiência intuitiva, segura e escalável, permitindo que empresas anunciem produtos com descontos atrativos e consumidores encontrem oportunidades de compra de forma simples e eficiente.
 
@@ -29,7 +29,7 @@ Empresas dos setores alimentício, farmacêutico e varejista frequentemente enfr
 
 ## 💡 Solução Proposta
 
-O FIFO Marketing atua como intermediador entre empresas e consumidores, permitindo que produtos próximos da validade sejam anunciados com preços reduzidos.
+O FIFO Market atua como intermediador entre empresas e consumidores, permitindo que produtos próximos da validade sejam anunciados com preços reduzidos.
 
 A plataforma disponibiliza recursos como:
 
@@ -144,7 +144,7 @@ A plataforma disponibiliza recursos como:
 
 ## 🎨 Identidade Visual
 
-A identidade visual do FIFO Marketing foi concebida para transmitir:
+A identidade visual do FIFO Market foi concebida para transmitir:
 
 * Sustentabilidade
 * Transparência
@@ -180,7 +180,7 @@ Este projeto possui finalidade educacional e acadêmica.
 
 ---
 
-### FIFO Marketing
+### FIFO Market
 
 **Conectando empresas e consumidores para reduzir desperdícios e promover um consumo mais inteligente.** 🌱💚
 
