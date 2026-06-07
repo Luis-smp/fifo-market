@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFO Market</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+
+<body>
+
+    <header class="navbar">
+        <div class="container flex-nav">
+
+            <div class="logo">
+                FIFO<span>MARKET</span>
+            </div>
+
+            <div class="area-pesquisa">
+                <input type="text" class="campo-pesquisa" id="campoPesquisa" placeholder="Pesquisar produtos...">
+
+                <button type="button" class="botao-pesquisa" id="botaoPesquisa">
+                    🔍
+                </button>
+            </div>
+
+            <div class="acoes-navbar">
+
+                <div class="acesso-usuario" id="acessoUsuario">
+                    <div class="icone-usuario">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round">
+                            <circle cx="12" cy="8" r="4" />
+                            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+                        </svg>
+                    </div>
+
+                    <div class="informacoes-usuario">
+                        <span>Entrar</span>
+                    </div>
+                </div>
+
+                <div class="carrinho" id="carrinho">
+                    <button type="button" class="botao-carrinho" id="botaoCarrinho">
+                        🛒 Carrinho
+                    </button>
+
+                    <span class="contador-carrinho" id="contadorCarrinho">
+                        0
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container grid-hero">
+
+            <div class="hero-text">
+                <h1>
+                    Próximo do vencimento,<span class="text-color">longe do lixo.</span>
+                </h1>
+
+                <p>
+                    Alimentos de qualidade com até 70% de desconto antes que
+                    vençam. Bom pra você, ótimo pro planeta.
+                </p>
+
+                <div class="hero-action">
+                    <a href="#" class="btn btn-neon">
+                        Ver promoções agora →
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-estatisticas">
+                <div class="caixa-estatistica">
+                    <h2>70%</h2>
+                    <p>Desconto máximo</p>
+                </div>
+
+                <div class="caixa-estatistica">
+                    <h2>2.4t</h2>
+                    <p>Desperdício evitado</p>
+                </div>
+
+                <div class="caixa-estatistica">
+                    <h2>18k</h2>
+                    <p>Clientes satisfeitos</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="vencendoHoje" class="venceHoje">
+        <div class="container vencendo">
+            <h1>vencendo Hoje</h1>
+            <p>🥤 suco de laranja 1L - vence as 23:59 · R$ 4,20</p>
+            <p>🥤 suco de laranja 1L - vence as 23:59 · R$ 4,20</p>
+            <p>🥤 suco de laranja 1L - vence as 23:59 · R$ 4,20</p>
+            <p>🥤 suco de laranja 1L - vence as 23:59 · R$ 4,20</p>
+        </div>
+    </section>
+
+    <section id="produtos" class="secao-produtos">
+        <div class="container">
+
+            <h2>🔥 Em promoção agora</h2>
+
+            <div class="grid-produtos">
+
+                <div class="card-produto">
+                    <div class="imagem-produto">
+                        <img src="assets/img/leite.png" alt="Leite Integral UHT Parmalat">
+                    </div>
+
+                    <div class="info-produto">
+                        <h3>Leite Integral UHT Parmalat — Caixa 1L</h3>
+
+                        <p class="validade">Vence AMANHÃ à meia-noite</p>
+
+                        <span class="preco-antigo">R$ 28,90</span>
+
+                        <div class="linha-preco">
+                            <strong>R$ 9,99</strong>
+                            <span class="desconto">-65%</span>
+                        </div>
+
+                        <a href="#" class="botao-comprar">
+                            Comprar agora
+                        </a>
+                    </div>
+                </div>
+                <div class="card-produto">
+                    <div class="imagem-produto">
+                        <img src="assets/img/leite.png" alt="Leite Integral UHT Parmalat">
+                    </div>
+
+                    <div class="info-produto">
+                        <h3>Leite Integral UHT Parmalat — Caixa 1L</h3>
+
+                        <p class="validade">Vence AMANHÃ à meia-noite</p>
+
+                        <span class="preco-antigo">R$ 28,90</span>
+
+                        <div class="linha-preco">
+                            <strong>R$ 9,99</strong>
+                            <span class="desconto">-65%</span>
+                        </div>
+
+                        <a href="#" class="botao-comprar">
+                            Comprar agora
+                        </a>
+                    </div>
+                </div>
+                <div class="card-produto">
+                    <div class="imagem-produto">
+                        <img src="assets/img/leite.png" alt="Leite Integral UHT Parmalat">
+                    </div>
+
+                    <div class="info-produto">
+                        <h3>Leite Integral UHT Parmalat — Caixa 1L</h3>
+
+                        <p class="validade">Vence AMANHÃ à meia-noite</p>
+
+                        <span class="preco-antigo">R$ 28,90</span>
+
+                        <div class="linha-preco">
+                            <strong>R$ 9,99</strong>
+                            <span class="desconto">-65%</span>
+                        </div>
+
+                        <a href="#" class="botao-comprar">
+                            Comprar agora
+                        </a>
+                    </div>
+                </div>
+                <div class="card-produto">
+                    <div class="imagem-produto">
+                        <img src="assets/img/leite.png" alt="Leite Integral UHT Parmalat">
+                    </div>
+
+                    <div class="info-produto">
+                        <h3>Leite Integral UHT Parmalat — Caixa 1L</h3>
+
+                        <p class="validade">Vence AMANHÃ à meia-noite</p>
+
+                        <span class="preco-antigo">R$ 28,90</span>
+
+                        <div class="linha-preco">
+                            <strong>R$ 9,99</strong>
+                            <span class="desconto">-65%</span>
+                        </div>
+
+                        <a href="#" class="botao-comprar">
+                            Comprar agora
+                        </a>
+                    </div>
+                </div>
+                <div class="card-produto">
+                    <div class="imagem-produto">
+                        <img src="assets/img/leite.png" alt="Leite Integral UHT Parmalat">
+                    </div>
+
+                    <div class="info-produto">
+                        <h3>Leite Integral UHT Parmalat — Caixa 1L</h3>
+
+                        <p class="validade">Vence AMANHÃ à meia-noite</p>
+
+                        <span class="preco-antigo">R$ 28,90</span>
+
+                        <div class="linha-preco">
+                            <strong>R$ 9,99</strong>
+                            <span class="desconto">-65%</span>
+                        </div>
+
+                        <a href="#" class="botao-comprar">
+                            Comprar agora
+                        </a>
+                    </div>
+                </div>
+                <div class="card-produto">
+                    <div class="imagem-produto">
+                        <img src="assets/img/leite.png" alt="Leite Integral UHT Parmalat">
+                    </div>
+
+                    <div class="info-produto">
+                        <h3>Leite Integral UHT Parmalat — Caixa 1L</h3>
+
+                        <p class="validade">Vence AMANHÃ à meia-noite</p>
+
+                        <span class="preco-antigo">R$ 28,90</span>
+
+                        <div class="linha-preco">
+                            <strong>R$ 9,99</strong>
+                            <span class="desconto">-65%</span>
+                        </div>
+
+                        <a href="#" class="botao-comprar">
+                            Comprar agora
+                        </a>
+                    </div>
+                </div>
+                <div class="card-produto">
+                    <div class="imagem-produto">
+                        <img src="assets/img/leite.png" alt="Leite Integral UHT Parmalat">
+                    </div>
+
+                    <div class="info-produto">
+                        <h3>Leite Integral UHT Parmalat — Caixa 1L</h3>
+
+                        <p class="validade">Vence AMANHÃ à meia-noite</p>
+
+                        <span class="preco-antigo">R$ 28,90</span>
+
+                        <div class="linha-preco">
+                            <strong>R$ 9,99</strong>
+                            <span class="desconto">-65%</span>
+                        </div>
+
+                        <a href="#" class="botao-comprar">
+                            Comprar agora
+                        </a>
+                    </div>
+                </div>
+                <div class="card-produto">
+                    <div class="imagem-produto">
+                        <img src="assets/img/leite.png" alt="Leite Integral UHT Parmalat">
+                    </div>
+
+                    <div class="info-produto">
+                        <h3>Leite Integral UHT Parmalat — Caixa 1L</h3>
+
+                        <p class="validade">Vence AMANHÃ à meia-noite</p>
+
+                        <span class="preco-antigo">R$ 28,90</span>
+
+                        <div class="linha-preco">
+                            <strong>R$ 9,99</strong>
+                            <span class="desconto">-65%</span>
+                        </div>
+
+                        <a href="#" class="botao-comprar">
+                            Comprar agora
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <footer>
+
+    <div class="footer-inner">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo">
+
+                    <div class="logo-icon">
+                        🛒
+                    </div>
+
+                    <div class="logo-text">
+                        <span class="fifo">FIFO</span>
+                        <span class="market">MARKET</span>
+                    </div>
+
+                </a>
+
+                <p>
+                    Conectamos consumidores a alimentos próximos do vencimento
+                    com grandes descontos. Economize mais, desperdice menos —
+                    pelo bem do planeta e do seu bolso.
+                </p>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h4>Categorias</h4>
+
+                <a href="#">Grãos e Cereais</a>
+                <a href="#">Laticínios</a>
+                <a href="#">Hortifruti</a>
+                <a href="#">Bebidas</a>
+                <a href="#">Padaria</a>
+                <a href="#">Ver todas</a>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h4>FIFO Market</h4>
+
+                <a href="#">Sobre nós</a>
+                <a href="#">Como funciona</a>
+                <a href="#">Parceiros</a>
+                <a href="#">Blog</a>
+                <a href="#">Imprensa</a>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h4>Ajuda</h4>
+
+                <a href="#">Central de ajuda</a>
+                <a href="#">Política de devolução</a>
+                <a href="#">Privacidade</a>
+                <a href="#">Termos de uso</a>
+                <a href="#">Contato</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2025 FIFO Market. Todos os direitos reservados.
+            </span>
+
+            <div class="eco-badge">
+                🌱 Empresa comprometida com o combate ao desperdício alimentar
+            </div>
+
+            <span>
+                Feito com 💚 no Brasil
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
