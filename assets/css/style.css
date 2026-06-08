@@ -861,3 +861,38 @@ footer {
     font-size: 1.6rem;
     font-weight: 800;
 }
+
+@media (max-width: 768px) {
+
+    .grid-modal-produto {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-imagem-produto img {
+        width: 200px;
+    }
+
+    .modal-info-produto,
+    .modal-compra {
+        padding: 20px;
+    }
+
+    .modal-info-produto h2 {
+        font-size: 1.5rem;
+    }
+
+    .preco-modal {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .conteudo-modal-produto {
+        width: 95%;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+}
