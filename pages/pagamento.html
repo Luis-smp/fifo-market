@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/pagamento.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <main class="pagina-pagamento">
+
+        <section class="container pagamento-container">
+
+            <div class="topo-pagamento">
+
+                <div class="etapas-pagamento">
+
+                    <div class="etapa concluida">
+                        <span>1</span>
+                        Carrinho
+                    </div>
+
+                    <div class="linha-etapa"></div>
+
+                    <div class="etapa ativa">
+                        <span>2</span>
+                        Pagamento
+                    </div>
+
+                    <div class="linha-etapa"></div>
+
+                    <div class="etapa">
+                        <span>3</span>
+                        Confirmação
+                    </div>
+
+                </div>
+
+                <a href="../index.html" class="link-continuar">
+                    ← Continuar comprando
+                </a>
+
+            </div>
+
+            <div class="grid-pagamento">
+
+                <div class="area-pagamento">
+
+                    <section class="card-pagamento">
+                        <div class="titulo-card-pagamento">
+                            📍 Endereço de entrega
+                            <a href="#">Alterar</a>
+                        </div>
+
+                        <div class="endereco-entrega">
+                            <div class="icone-endereco">🏠</div>
+
+                            <div>
+                                <strong>BLABLABLA, 1945 — Apto 31</strong>
+                                <p>Vila Kokokokkk, São Paulo — SP</p>
+                                <p>CEP 00000-000 · Brasil</p>
+
+                                <span class="selo-endereco">
+                                    ✓ Endereço confirmado
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="card-pagamento">
+                        <div class="titulo-card-pagamento">
+                            🚚 Opções de entrega
+                        </div>
+
+                        <div class="opcoes-entrega">
+
+                            <label class="opcao-entrega ativa">
+                                <input type="radio" name="entrega" checked>
+                                <div>
+                                    <strong>⚡ Entrega Expressa — Hoje</strong>
+                                    <p>Chega hoje até 20h · FIFO Full</p>
+                                </div>
+                            </label>
+
+                            <label class="opcao-entrega">
+                                <input type="radio" name="entrega">
+                                <div>
+                                    <strong>🚚 Entrega Padrão</strong>
+                                    <p>Chega amanhã até 18h hoje</p>
+                                </div>
+                            </label>
+
+                            <label class="opcao-entrega">
+                                <input type="radio" name="entrega">
+                                <div>
+                                    <strong>🏬 Retirada no ponto</strong>
+                                    <p>Disponível em 25–30min da loja</p>
+                                </div>
+                            </label>
+
+                        </div>
+                    </section>
+
+                    <section class="card-pagamento">
+                        <div class="titulo-card-pagamento">
+                            💳 Forma de pagamento
+                        </div>
+
+                        <div class="abas-pagamento">
+
+                            <button type="button" class="aba-pagamento ativa">
+                                💳 Cartão de crédito
+                            </button>
+
+                            <button type="button" class="aba-pagamento">
+                                ⚡ Pix <span>-5%</span>
+                            </button>
+
+                            <button type="button" class="aba-pagamento">
+                                🧾 Boleto
+                            </button>
+
+                        </div>
+
+                        <div class="cartao-preview">
+
+                            <div class="chip-cartao">💳</div>
+
+                            <div class="numero-cartao">
+                                •••• •••• •••• ••••
+                            </div>
+
+                            <div class="dados-cartao-preview">
+                                <div>
+                                    <small>Nome</small>
+                                    <strong>SEU NOME</strong>
+                                </div>
+
+                                <div>
+                                    <small>Validade</small>
+                                    <strong>MM/AA</strong>
+                                </div>
+                            </div>
+
+                            <div class="bandeira-cartao">💳</div>
+
+                        </div>
+
+                        <form class="formulario-pagamento">
+
+                            <label>
+                                Número do cartão
+                                <input type="text" placeholder="0000 0000 0000 0000">
+                            </label>
+
+                            <label>
+                                Nome no cartão
+                                <input type="text" placeholder="Como aparece no cartão">
+                            </label>
+
+                            <div class="linha-formulario">
+                                <label>
+                                    Validade
+                                    <input type="text" placeholder="MM/AA">
+                                </label>
+
+                                <label>
+                                    CVV
+                                    <input type="text" placeholder="•••">
+                                </label>
+                            </div>
+
+                        </form>
+
+                        <div class="parcelamento">
+
+                            <h4>Parcelamento</h4>
+
+                            <label class="opcao-parcela ativa">
+                                <input type="radio" name="parcela" checked>
+                                <span>À vista — R$ 9,79</span>
+                                <small>🔥 Melhor opção</small>
+                            </label>
+
+                            <label class="opcao-parcela">
+                                <input type="radio" name="parcela">
+                                <span>2x de R$ 4,89 sem juros</span>
+                                <small>Sem juros</small>
+                            </label>
+
+                            <label class="opcao-parcela">
+                                <input type="radio" name="parcela">
+                                <span>3x de R$ 3,26 sem juros</span>
+                            </label>
+
+                            <label class="opcao-parcela">
+                                <input type="radio" name="parcela">
+                                <span>4x de R$ 2,45 sem juros</span>
+                            </label>
+
+                            <label class="opcao-parcela">
+                                <input type="radio" name="parcela">
+                                <span>6x de R$ 1,63 sem juros</span>
+                            </label>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+                <aside class="resumo-pedido">
+
+                    <h2>🛒 Resumo do pedido</h2>
+
+                    <div class="produto-resumo-pagamento">
+                        <img src="../assets/img/leite-Photoroom.png" alt="Leite Integral UHT Parmalat">
+
+                        <div>
+                            <p>Leite Integral UHT Parmalat — Caixa 1L</p>
+                            <strong>R$ 2,99</strong>
+                        </div>
+                    </div>
+
+                    <div class="linha-resumo">
+                        <span>Total dos itens</span>
+                        <strong>R$ 2,99</strong>
+                    </div>
+
+                    <div class="linha-resumo">
+                        <span>Desconto dos itens</span>
+                        <strong>- R$ 3,00</strong>
+                    </div>
+
+                    <div class="linha-resumo">
+                        <span>Entrega</span>
+                        <strong>Grátis</strong>
+                    </div>
+
+                    <div class="total-pagamento">
+                        <span>Estimativa total</span>
+                        <strong>R$ 2,99</strong>
+                    </div>
+
+                    <div class="economia">
+                        ✔ Você economizou
+                        <strong>R$ 3,00</strong>
+                        <span>em produtos próximos do vencimento</span>
+                    </div>
+
+                    <a href="#" class="botao-finalizar-pedido">
+                        Finalizar Pedido
+                    </a>
+
+                    <ul class="beneficios-carrinho">
+                        <li>🔒 Pagamento 100% seguro e criptografado</li>
+                        <li>✅ Você ainda pode corrigir dados</li>
+                        <li>🌱 Compra consciente: você combate o desperdício</li>
+                    </ul>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+</body>
+
+</html>

@@ -437,6 +437,7 @@ body {
     text-decoration: none;
     border-radius: 10px;
     font-weight: 700;
+    border: var(--bg--vermelho);
     transition: var(--transition);
 }
 
@@ -634,4 +635,229 @@ footer {
     .grid-produtos {
         grid-template-columns: 1fr;
     }
+}
+
+.modal-produto {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+}
+
+.modal-produto.ativo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fundo-modal {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(4px);
+}
+
+.conteudo-modal-produto {
+    position: relative;
+    z-index: 2;
+    width: min(1180px, 94%);
+    background: #f4f6f3;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.fechar-modal {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.topo-modal {
+    background: var(--bg--verde);
+    color: #fff;
+    padding: 18px 24px;
+}
+
+.grid-modal-produto {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr 300px;
+}
+
+.modal-imagem-produto,
+.modal-info-produto,
+.modal-compra {
+    padding: 30px;
+}
+
+
+.modal-imagem-produto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.modal-imagem-produto img {
+    width: 280px;
+}
+
+.selo-vencimento,
+.selo-desconto {
+    position: absolute;
+    top: 30px;
+    padding: 8px 12px;
+    border-radius: 999px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.selo-vencimento {
+    left: 30px;
+    background: var(--bg--vermelho);
+}
+
+.selo-desconto {
+    right: 30px;
+    background: var(--bg--verde);
+    font-size: 1.5rem;
+}
+
+.modal-info-produto {
+    background: #fff;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.selos-produto span {
+    background: var(--bg--verde);
+    color: #fff;
+    padding: 6px 18px;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+.modal-info-produto h2 {
+    font-size: 2rem;
+    line-height: 1.1;
+    margin: 20px 0 12px;
+}
+
+.alerta-produto {
+    display: flex;
+    gap: 14px;
+    background: #ffd1d1;
+    border: 1px solid #ff9999;
+    padding: 18px;
+    border-radius: 8px;
+    margin: 20px 0;
+    color: red;
+}
+
+.preco-modal {
+    display: block;
+    color: var(--bg--verde);
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.economia-modal {
+    display: inline-block;
+    background: #d8f3dc;
+    color: var(--bg--verde);
+    padding: 6px 12px;
+    border-radius: 999px;
+    margin: 12px 0;
+}
+
+.variantes-produto button,
+.quantidade-modal button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.quantidade-modal {
+    margin: 20px 0;
+}
+
+.lista-beneficios {
+    list-style: none;
+    font-size: 0.85rem;
+}
+
+.modal-compra {
+    background: #f8faf7;
+}
+
+.frete-modal,
+.estoque-modal {
+    border: 1px solid var(--bg--verde);
+    background-color: #2e7d322f;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.unidades-restantes{
+    color: var(--bg--vermelho);
+}
+
+.botao-comprar-modal,
+.botao-add-carrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 58px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.botao-comprar-modal {
+    background: red;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.botao-add-carrinho {
+    border: 2px solid #8fbc8f;
+    color: #8fbc8f;
+    background: #fff;
+    font-size: 1.2rem;
+}
+
+.card-loja-modal {
+    margin-top: 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    box-shadow: 0 12px 25px rgba(0,0,0,.15);
+}
+
+.avatar-loja {
+    width: 60px;
+    height: 60px;
+    background: #d8f3dc;
+    color: var(--bg--verde);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 1.6rem;
+    font-weight: 800;
 }

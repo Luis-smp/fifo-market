@@ -1,0 +1,498 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg--backgroud);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+
+:root {
+    --bg--verde: #2E7D32;
+    --bg--vermelho: #E33935;
+    --bg--backgroud: #F4F6F3;
+    --bg--amarelo: #FFB300;
+    --bg--footer: #1A1F19;
+    --transition: all 0.3s ease;
+}
+
+
+.pagina-pagamento {
+    padding: 40px 0;
+    background: var(--bg--backgroud);
+}
+
+.pagamento-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.topo-pagamento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.etapas-pagamento {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.etapa {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #999;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.etapa span {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #ddd;
+    color: #888;
+    display: grid;
+    place-items: center;
+    font-size: 0.75rem;
+}
+
+.etapa.ativa,
+.etapa.concluida {
+    color: var(--bg--verde);
+}
+
+.etapa.ativa span,
+.etapa.concluida span {
+    background: var(--bg--verde);
+    color: #fff;
+}
+
+.linha-etapa {
+    width: 50px;
+    height: 2px;
+    background: var(--bg--verde);
+}
+
+.grid-pagamento {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 24px;
+}
+
+.area-pagamento {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.card-pagamento {
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.titulo-card-pagamento {
+    padding: 14px 18px;
+    border-bottom: 1px solid #e5e5e5;
+    font-weight: 800;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-card-pagamento a {
+    color: var(--bg--verde);
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.endereco-entrega {
+    padding: 18px;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.icone-endereco {
+    font-size: 3.5rem;
+}
+
+.endereco-entrega p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.selo-endereco {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: #d8f3dc;
+    color: var(--bg--verde);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.opcoes-entrega {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.opcao-entrega {
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.opcao-entrega.ativa {
+    background: #d8f3dc;
+    border-color: var(--bg--verde);
+}
+
+.opcao-entrega p {
+    color: #777;
+    font-size: 0.8rem;
+}
+
+.abas-pagamento {
+    padding: 18px 18px 0;
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.aba-pagamento {
+    padding: 12px 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    color: #777;
+    border-bottom: 3px solid transparent;
+}
+
+.aba-pagamento.ativa {
+    color: var(--bg--verde);
+    border-bottom-color: var(--bg--verde);
+}
+
+.aba-pagamento span {
+    background: var(--bg--verde);
+    color: #fff;
+    border-radius: 999px;
+    padding: 2px 6px;
+    font-size: 0.7rem;
+}
+
+.cartao-preview {
+    margin: 24px 18px;
+    padding: 28px;
+    min-height: 190px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #2E7D32, #228b35);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.cartao-preview::before,
+.cartao-preview::after {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.cartao-preview::before {
+    right: -40px;
+    top: -40px;
+}
+
+.cartao-preview::after {
+    right: 40px;
+    bottom: -80px;
+}
+
+.chip-cartao,
+.bandeira-cartao,
+.numero-cartao,
+.dados-cartao-preview {
+    position: relative;
+    z-index: 2;
+}
+
+.chip-cartao {
+    font-size: 1.8rem;
+    margin-bottom: 28px;
+}
+
+.numero-cartao {
+    font-size: 1.5rem;
+    letter-spacing: 6px;
+    margin-bottom: 28px;
+}
+
+.dados-cartao-preview {
+    display: flex;
+    justify-content: space-between;
+    max-width: 360px;
+}
+
+.dados-cartao-preview small {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    opacity: 0.8;
+}
+
+.bandeira-cartao {
+    position: absolute;
+    right: 26px;
+    bottom: 24px;
+    font-size: 1.5rem;
+}
+
+.formulario-pagamento {
+    padding: 0 18px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.formulario-pagamento label {
+    color: #555;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.formulario-pagamento input {
+    width: 100%;
+    height: 46px;
+    margin-top: 6px;
+    padding: 0 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-family: inherit;
+}
+
+.linha-formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.parcelamento {
+    padding: 0 18px 22px;
+}
+
+.parcelamento h4 {
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    color: #555;
+}
+
+.opcao-parcela {
+    height: 46px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0 14px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.opcao-parcela.ativa {
+    background: #e8f5e9;
+    border-color: var(--bg--verde);
+}
+
+.opcao-parcela span {
+    flex: 1;
+}
+
+.opcao-parcela small {
+    background: #d8f3dc;
+    color: var(--bg--verde);
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+.opcao-parcela.ativa small {
+    background: var(--bg--amarelo);
+    color: #000;
+}
+
+.resumo-pedido {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.resumo-pedido {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    height: fit-content;
+
+    position: sticky;
+    top: 90px;
+}
+
+.produto-resumo-pagamento {
+    padding: 14px 16px;
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.produto-resumo-pagamento img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.produto-resumo-pagamento p {
+    font-size: 0.75rem;
+}
+
+.link-continuar{
+    color: var(--bg--verde);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.produto-resumo-pagamento strong {
+    color: var(--bg--verde);
+}
+
+.linha-resumo {
+    padding: 0 16px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+    font-size: 0.85rem;
+}
+
+.total-pagamento {
+    padding: 20px 16px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.total-pagamento span {
+    font-size: 1.4rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.total-pagamento strong {
+    color: var(--bg--verde);
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+.economia {
+    margin: 12px 16px;
+    padding: 14px;
+    border-radius: 10px;
+    background: #d8f3dc;
+    border: 1px solid #b7dfbd;
+    color: var(--bg--verde);
+    text-align: center;
+    font-weight: 700;
+}
+
+.economia strong {
+    display: block;
+    font-size: 1.6rem;
+}
+
+.economia span {
+    display: block;
+    font-size: 0.75rem;
+    color: #6a8f6d;
+}
+
+.botao-finalizar-pedido {
+    margin: 12px 16px;
+    height: 44px;
+    border-radius: 8px;
+    background: var(--bg--verde);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.beneficios-carrinho {
+    list-style: none;
+    padding: 8px 16px 18px;
+}
+
+.beneficios-carrinho li {
+    font-size: 0.75rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 900px) {
+    .topo-pagamento {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .grid-pagamento {
+        grid-template-columns: 1fr;
+    }
+
+    .etapas-pagamento {
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .linha-formulario {
+        grid-template-columns: 1fr;
+    }
+
+    .numero-cartao {
+        font-size: 1.1rem;
+        letter-spacing: 3px;
+    }
+}
