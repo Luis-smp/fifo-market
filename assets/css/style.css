@@ -50,7 +50,8 @@ body {
 }
 
 .logo {
-    color: #fff;
+    
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     line-height: 0.9;
@@ -58,6 +59,8 @@ body {
     font-weight: 800;
     position: relative;
     padding-left: 52px;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 .logo::before {
@@ -71,11 +74,15 @@ body {
     font-size: 1.6rem;
     position: absolute;
     margin-left: -58px;
+    
 }
 
 .logo span {
     font-size: 0.7rem;
     letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.438);
+    padding-top: 10px;
+    
 }
 
 .area-pesquisa {
@@ -187,6 +194,11 @@ body {
 .hero {
     padding: 20px 0 40px;
     background-color: var(--bg--backgroud);
+}
+
+.link-perfil{
+    color: white;
+    text-decoration: none;
 }
 
 .grid-hero {
@@ -507,6 +519,7 @@ footer {
     flex-direction: column;
     line-height: 1;
     text-align: left;
+    
 }
 
 .fifo {
@@ -895,4 +908,53 @@ footer {
         overflow-y: auto;
     }
 
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        padding: 18px 0;
+    }
+
+    .flex-nav {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 14px;
+        align-items: start;
+    }
+
+    .logo {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .acoes-navbar {
+        grid-column: 2;
+        grid-row: 1;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    .acesso-usuario {
+        order: 1;
+    }
+
+    .carrinho {
+        order: 2;
+    }
+
+    .area-pesquisa {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        max-width: none;
+        width: 100%;
+    }
+
+    .hero {
+        padding-top: 28px;
+    }
+
+    .grid-hero {
+        margin-top: 18px;
+    }
 }
