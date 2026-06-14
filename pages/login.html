@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | FIFO Market</title>
+
+    <link rel="stylesheet" href="../assets/css/login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="auth-page">
+
+        <a href="../index.html" class="voltar">← Voltar</a>
+
+        <section class="container-login" id="containerLogin">
+
+            <div class="form-container login">
+                <form>
+                    <h1>Entrar</h1>
+                    <p class="form-text">Acesse sua conta e aproveite as ofertas da FIFO Market.</p>
+
+                    <input type="email" placeholder="E-mail" required>
+                    <input type="password" placeholder="Senha" required>
+
+                    <a href="#" class="esqueci-senha">Esqueci minha senha</a>
+
+                    <button type="submit"><a href="../pages/perfil.html">Entrar</a></button>
+
+                    <a href="../empresa/pages/login.html" class="btn-empresa">Entrar como empresa</a>
+
+                    <p class="mobile-switch">
+                        Ainda não tem conta?
+                        <button type="button" id="abrirCadastroMobile">Cadastrar</button>
+                    </p>
+                </form>
+            </div>
+
+            <div class="form-container cadastro">
+                <form>
+                    <h1>Criar conta</h1>
+                    <p class="form-text">Cadastre-se para economizar e evitar desperdícios.</p>
+
+                    <input type="text" placeholder="Nome completo" required>
+                    <input type="email" placeholder="E-mail" required>
+                    <input type="password" placeholder="Senha" required>
+
+                    <button type="submit">Cadastrar</button>
+
+                    <p class="mobile-switch">
+                        Já possui conta?
+                        <button type="button" id="abrirLoginMobile">Entrar</button>
+                    </p>
+                </form>
+            </div>
+
+            <div class="switch-container">
+                <div class="switch">
+
+                    <div class="switch-panel switch-left">
+                        <h1>Bem-vindo!</h1>
+                        <p>Já possui uma conta? Entre para continuar comprando com economia.</p>
+                        <button type="button" id="loginBtn">Entrar</button>
+                    </div>
+
+                    <div class="switch-panel switch-right">
+                        <h1>Olá!</h1>
+                        <p>Crie sua conta e aproveite produtos com descontos de até 70%.</p>
+                        <button type="button" id="cadastroBtn">Cadastrar</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script>
+        const container = document.getElementById("containerLogin");
+
+        document.getElementById("cadastroBtn").addEventListener("click", () => {
+            container.classList.add("active");
+        });
+
+        document.getElementById("loginBtn").addEventListener("click", () => {
+            container.classList.remove("active");
+        });
+
+        document.getElementById("abrirCadastroMobile").addEventListener("click", () => {
+            container.classList.add("active");
+        });
+
+        document.getElementById("abrirLoginMobile").addEventListener("click", () => {
+            container.classList.remove("active");
+        });
+    </script>
+
+</body>
+
+</html>

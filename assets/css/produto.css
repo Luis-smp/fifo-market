@@ -1,0 +1,126 @@
+.pagina-produto {
+    padding: 25px 0 60px;
+    background: var(--bg--backgroud);
+}
+
+.produto-container {
+    max-width: 1500px;
+}
+
+.voltar-produto {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: var(--bg--verde);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.topo-produto {
+    background: var(--bg--verde);
+    color: #fff;
+    padding: 20px 28px;
+    border-radius: 14px 14px 0 0;
+}
+
+.grid-produto-detalhe {
+    display: grid;
+    grid-template-columns: 1.2fr 1.8fr 380px;
+    min-height: 720px;
+    background: #f4f6f3;
+    border-radius: 0 0 14px 14px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.imagem-produto-detalhe,
+.info-produto-detalhe,
+.compra-produto-detalhe {
+    padding: 40px;
+}
+
+.imagem-produto-detalhe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.imagem-produto-detalhe img {
+    width: 420px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.info-produto-detalhe {
+    background: #fff;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.info-produto-detalhe h1 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.avaliacao-produto {
+    margin-bottom: 20px;
+}
+
+.preco-modal {
+    display: block;
+    color: var(--bg--verde);
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.compra-produto-detalhe {
+    background: #f8faf7;
+}
+
+@media (max-width: 1100px) {
+    .grid-produto-detalhe {
+        grid-template-columns: 1fr;
+    }
+
+    .info-produto-detalhe {
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .imagem-produto-detalhe img {
+        width: 280px;
+    }
+
+    .info-produto-detalhe h1 {
+        font-size: 1.8rem;
+    }
+
+    .preco-modal {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .imagem-produto-detalhe,
+    .info-produto-detalhe,
+    .compra-produto-detalhe {
+        padding: 24px;
+    }
+
+    .topo-produto {
+        padding: 16px 20px;
+    }
+
+    .imagem-produto-detalhe img {
+        width: 220px;
+    }
+
+    .info-produto-detalhe h1 {
+        font-size: 1.5rem;
+    }
+}

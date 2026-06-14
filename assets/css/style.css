@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 :root {
     --bg--verde: #2E7D32;
     --bg--vermelho: #E33935;

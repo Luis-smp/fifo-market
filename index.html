@@ -29,10 +29,9 @@
                 </button>
             </div>
 
-            
             <div class="acoes-navbar">
 
-                <div class="acesso-usuario" id="acessoUsuario">
+                <a href="pages/login.html" class="acesso-usuario" id="acessoUsuario">
                     <div class="icone-usuario">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                             stroke-linecap="round">
@@ -41,12 +40,10 @@
                         </svg>
                     </div>
 
-                    <div class="informacoes-usuario" >
-                        <a href="pages/perfil.html" class="link-perfil">
+                    <div class="informacoes-usuario">
                         <span>Entrar</span>
-                        </a>
                     </div>
-                </div>
+                </a>
 
                 <div class="carrinho" id="carrinho">
                     <a href="pages/carrinho.html">
@@ -138,7 +135,7 @@
                         </div>
 
                         <button type="button" class="botao-comprar">
-                            Comprar agora
+                            <a href="pages/produto.html">Comprar agora</a>
                         </button>
                     </div>
                 </div>
@@ -369,137 +366,7 @@
         </div>
     </footer>
 
-    <div class="modal-produto" id="modalProduto">
-
-        <div class="fundo-modal"></div>
-
-        <div class="conteudo-modal-produto">
-
-            <button type="button" class="fechar-modal" id="fecharModal">
-                ×
-            </button>
-
-            <div class="topo-modal">
-                <span>Início &gt; Laticínios &gt;</span>
-                <strong>Leite Integral UHT Parmalat — Caixa 1L</strong>
-            </div>
-
-            <div class="grid-modal-produto">
-
-                <div class="modal-imagem-produto">
-                    <span class="selo-vencimento">Vence hoje</span>
-                    <span class="selo-desconto">-30%</span>
-
-                    <img src="assets/img/leite-Photoroom.png" alt="Leite Integral UHT Parmalat"
-                        class="img-leite-modal">
-                </div>
-
-                <div class="modal-info-produto">
-
-                    <div class="selos-produto">
-                        <span>Mais vendido</span>
-                        <small>+5 mil vendidos</small>
-                    </div>
-
-                    <h2>Leite Integral UHT Parmalat — Caixa 1L</h2>
-
-                    <div class="avaliacao-produto">
-                        ⭐⭐⭐⭐☆ <strong>4.7</strong>
-                    </div>
-
-                    <div class="alerta-produto">
-                        ⚠️
-
-                        <div>
-                            <strong>Vence HOJE à meia-noite — corra!</strong>
-                            <p>Ainda dentro da validade. Consuma imediatamente após abertura.</p>
-                        </div>
-                    </div>
-
-                    <p class="preco-de">
-                        De: <s>R$ 5,99</s>
-                    </p>
-
-                    <strong class="preco-modal">
-                        R$ 2,99
-                    </strong>
-
-                    <div class="economia-modal">
-                        ✔ Você economiza R$ 3,00 nesta compra
-                    </div>
-
-                    <hr>
-
-                    <div class="variantes-produto">
-                        <p>Quantidade / Variante</p>
-
-                        <button type="button">1 un.</button>
-                        <button type="button">2 un. <small>-5%</small></button>
-                        <button type="button">3 un. <small>-10%</small></button>
-                    </div>
-
-                    <div class="quantidade-modal">
-                        <button type="button">-</button>
-                        <span>1</span>
-                        <button type="button">+</button>
-                    </div>
-
-                    <ul class="lista-beneficios">
-                        <li>✅ Produto novo, dentro da validade</li>
-                        <li>🌱 Salvo do desperdício — bem pro planeta</li>
-                        <li>🛡️ Qualidade garantida pela FIFO Market</li>
-                        <li>🚚 Entrega no mesmo dia disponível</li>
-                    </ul>
-
-                </div>
-
-                <aside class="modal-compra">
-
-                    <div class="frete-modal">
-                        <strong>🚚 Frete GRÁTIS</strong>
-                        <p>Chega hoje se comprar agora</p>
-                    </div>
-
-                    <div class="estoque-modal">
-                        Estoque crítico ⚠️
-                        <span class="unidades-restantes">
-                            54 restantes!
-                        </span>
-                    </div>
-
-                    <a href="pages/pagamento.html" class="botao-comprar-modal">
-                        🛒 Compra agora
-                    </a>
-
-                    <a href="pages/carrinho.html" class="botao-add-carrinho">
-                        +Adicionar ao Carrinho
-                    </a>
-
-                    <ul class="lista-beneficios">
-                        <li>✅ Produto novo, dentro da validade</li>
-                        <li>🌱 Salvo do desperdício — bem pro planeta</li>
-                        <li>🛡️ Qualidade garantida pela FIFO Market</li>
-                        <li>🚚 Entrega no mesmo dia disponível</li>
-                    </ul>
-
-                    <div class="card-loja-modal">
-                        <div class="avatar-loja">
-                            FM
-                        </div>
-
-                        <div>
-                            <strong>FIFO Market Oficial</strong>
-                            <p>Loja verificada · +10k vendas</p>
-                        </div>
-                    </div>
-
-                </aside>
-
-            </div>
-
-        </div>
-
-    </div>
+    
 
     <script src="assets/js/script.js"></script>
 

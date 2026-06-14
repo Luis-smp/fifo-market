@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #F4F6F3;
+}
+
+.auth-page {
+    position: relative;
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        radial-gradient(circle at top left, rgba(255, 179, 0, .25), transparent 30%),
+        linear-gradient(135deg, #2E7D32, #1f5f26);
+}
+
+.voltar {
+    position: absolute;
+    top: 28px;
+    left: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.container-login {
+    position: relative;
+    width: 950px;
+    max-width: 100%;
+    min-height: 600px;
+    background: #fff;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, .25);
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    padding: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .65s ease-in-out;
+}
+
+.form-container form {
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container h1 {
+    font-size: 2.2rem;
+    color: #1f1f1f;
+    margin-bottom: 10px;
+}
+
+.form-text {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 28px;
+    font-size: .95rem;
+}
+
+.form-container input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px 16px;
+    border: 2px solid #e5e5e5;
+    border-radius: 14px;
+    outline: none;
+    font-family: inherit;
+    font-size: .95rem;
+}
+
+.form-container input:focus {
+    border-color: #2E7D32;
+}
+
+.form-container button[type="submit"] {
+    margin-top: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 14px;
+    background: #2E7D32;
+    color: #fff;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.form-container button[type="submit"]:hover {
+    background: #256b2a;
+}
+
+.esqueci-senha {
+    color: #E33935;
+    text-decoration: none;
+    font-size: .9rem;
+    font-weight: 700;
+    margin: 2px 0 8px;
+}
+
+.login {
+    left: 0;
+    z-index: 2;
+}
+
+.cadastro {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.mobile-switch {
+    display: none;
+}
+
+
+.btn-empresa {
+    margin-top: 12px;
+    padding: 14px;
+    border: 2px solid #2E7D32;
+    border-radius: 14px;
+    color: #2E7D32;
+    background: transparent;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 800;
+    transition: .3s;
+}
+
+.btn-empresa:hover {
+    background: #2E7D32;
+    color: #fff;
+}
+
+/* SWITCH */
+
+.switch-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 10;
+    transition: .65s ease-in-out;
+}
+
+.switch {
+    position: relative;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background:
+        radial-gradient(circle at top right, rgba(255, 179, 0, .35), transparent 32%),
+        linear-gradient(135deg, #2E7D32, #1f5f26);
+    color: #fff;
+    transition: .65s ease-in-out;
+}
+
+.switch-panel {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.switch-panel h1 {
+    font-size: 2.6rem;
+    margin-bottom: 16px;
+}
+
+.switch-panel p {
+    max-width: 330px;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.switch-panel button {
+    padding: 13px 34px;
+    border: 2px solid #fff;
+    border-radius: 999px;
+    background: transparent;
+    color: #fff;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.switch-panel button:hover {
+    background: #fff;
+    color: #2E7D32;
+}
+
+.switch-left {
+    left: 0;
+}
+
+.switch-right {
+    right: 0;
+}
+
+.container-login.active .login {
+    transform: translateX(100%);
+    opacity: 0;
+    z-index: 1;
+}
+
+.container-login.active .cadastro {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+
+.container-login.active .switch-container {
+    transform: translateX(-100%);
+}
+
+.container-login.active .switch {
+    transform: translateX(50%);
+}
+
+
+@media (max-width: 800px) {
+    .auth-page {
+        padding: 80px 18px 30px;
+        align-items: flex-start;
+    }
+
+    .voltar {
+        top: 24px;
+        left: 22px;
+    }
+
+    .container-login {
+        width: 100%;
+        max-width: 430px;
+        min-height: auto;
+        border-radius: 26px;
+    }
+
+    .switch-container {
+        display: none;
+    }
+
+    .form-container {
+        position: relative;
+        width: 100%;
+        height: auto;
+        min-height: 560px;
+        padding: 38px 26px;
+        transition: .3s ease;
+    }
+
+    .login {
+        left: auto;
+        opacity: 1;
+        z-index: 2;
+        display: flex;
+    }
+
+    .cadastro {
+        left: auto;
+        opacity: 1;
+        z-index: 2;
+        display: none;
+    }
+
+    .container-login.active .login {
+        display: none;
+        transform: none;
+        opacity: 1;
+    }
+
+    .container-login.active .cadastro {
+        display: flex;
+        transform: none;
+        opacity: 1;
+    }
+
+    .form-container h1 {
+        font-size: 2rem;
+    }
+
+    .mobile-switch {
+        display: block;
+        margin-top: 22px;
+        text-align: center;
+        color: #666;
+        font-size: .9rem;
+    }
+
+    .mobile-switch button {
+        border: none;
+        background: transparent;
+        color: #2E7D32;
+        font-family: inherit;
+        font-weight: 800;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 420px) {
+    .form-container {
+        padding: 34px 22px;
+        min-height: 540px;
+    }
+
+    .form-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .form-text {
+        font-size: .9rem;
+    }
+}
