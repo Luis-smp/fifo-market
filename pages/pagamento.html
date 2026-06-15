@@ -1,26 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pagamento | FIFO Market</title>
     <link rel="stylesheet" href="../assets/css/pagamento.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
     <main class="pagina-pagamento">
 
-        <section class="container pagamento-container">
+        <div class="container pagamento-container">
 
             <div class="topo-pagamento">
-
                 <div class="etapas-pagamento">
-
                     <div class="etapa concluida">
                         <span>1</span>
                         Carrinho
@@ -39,13 +35,11 @@
                         <span>3</span>
                         Confirmação
                     </div>
-
                 </div>
 
                 <a href="../index.html" class="link-continuar">
                     ← Continuar comprando
                 </a>
-
             </div>
 
             <div class="grid-pagamento">
@@ -54,7 +48,7 @@
 
                     <section class="card-pagamento">
                         <div class="titulo-card-pagamento">
-                            📍 Endereço de entrega
+                            <h1>📍 Endereço de entrega</h1>
                             <a href="#">Alterar</a>
                         </div>
 
@@ -75,45 +69,56 @@
 
                     <section class="card-pagamento">
                         <div class="titulo-card-pagamento">
-                            🚚 Opções de entrega
+                            <h2>🚚 Opções de entrega</h2>
                         </div>
 
                         <div class="opcoes-entrega">
 
-                            <label class="opcao-entrega ativa">
-                                <input type="radio" name="entrega" checked>
-                                <div>
-                                    <strong>⚡ Entrega Expressa — Hoje</strong>
-                                    <p>Chega hoje até 20h · FIFO Full</p>
-                                </div>
-                            </label>
+    <div class="opcao-entrega ativa">
+        <input type="radio" name="entrega" id="entregaExpressa" checked>
 
-                            <label class="opcao-entrega">
-                                <input type="radio" name="entrega">
-                                <div>
-                                    <strong>🚚 Entrega Padrão</strong>
-                                    <p>Chega amanhã até 18h hoje</p>
-                                </div>
-                            </label>
+        <div>
+            <label for="entregaExpressa">
+                <strong>⚡ Entrega Expressa — Hoje</strong>
+            </label>
 
-                            <label class="opcao-entrega">
-                                <input type="radio" name="entrega">
-                                <div>
-                                    <strong>🏬 Retirada no ponto</strong>
-                                    <p>Disponível em 25–30min da loja</p>
-                                </div>
-                            </label>
+            <p>Chega hoje até 20h · FIFO Full</p>
+        </div>
+    </div>
 
-                        </div>
+    <div class="opcao-entrega">
+        <input type="radio" name="entrega" id="entregaPadrao">
+
+        <div>
+            <label for="entregaPadrao">
+                <strong>🚚 Entrega Padrão</strong>
+            </label>
+
+            <p>Chega amanhã até 18h hoje</p>
+        </div>
+    </div>
+
+    <div class="opcao-entrega">
+        <input type="radio" name="entrega" id="retiradaPonto">
+
+        <div>
+            <label for="retiradaPonto">
+                <strong>🏬 Retirada no ponto</strong>
+            </label>
+
+            <p>Disponível em 25–30min da loja</p>
+        </div>
+    </div>
+
+</div>
                     </section>
 
                     <section class="card-pagamento">
                         <div class="titulo-card-pagamento">
-                            💳 Forma de pagamento
+                            <h2>💳 Forma de pagamento</h2>
                         </div>
 
                         <div class="abas-pagamento">
-
                             <button type="button" class="aba-pagamento ativa">
                                 💳 Cartão de crédito
                             </button>
@@ -125,11 +130,9 @@
                             <button type="button" class="aba-pagamento">
                                 🧾 Boleto
                             </button>
-
                         </div>
 
                         <div class="cartao-preview">
-
                             <div class="chip-cartao">💳</div>
 
                             <div class="numero-cartao">
@@ -149,7 +152,6 @@
                             </div>
 
                             <div class="bandeira-cartao">💳</div>
-
                         </div>
 
                         <form class="formulario-pagamento">
@@ -179,44 +181,39 @@
                         </form>
 
                         <div class="parcelamento">
+                            <h2>Parcelamento</h2>
 
-                            <h4>Parcelamento</h4>
-
-                            <label class="opcao-parcela ativa">
-                                <input type="radio" name="parcela" checked>
-                                <span>À vista — R$ 9,79</span>
+                            <div class="opcao-parcela ativa">
+                                <input type="radio" name="parcela" id="parcela1" checked>
+                                <label for="parcela1">À vista — R$ 9,79</label>
                                 <small>🔥 Melhor opção</small>
-                            </label>
+                            </div>
 
-                            <label class="opcao-parcela">
-                                <input type="radio" name="parcela">
-                                <span>2x de R$ 4,89 sem juros</span>
+                            <div class="opcao-parcela">
+                                <input type="radio" name="parcela" id="parcela2">
+                                <label for="parcela2">2x de R$ 4,89 sem juros</label>
                                 <small>Sem juros</small>
-                            </label>
+                            </div>
 
-                            <label class="opcao-parcela">
-                                <input type="radio" name="parcela">
-                                <span>3x de R$ 3,26 sem juros</span>
-                            </label>
+                            <div class="opcao-parcela">
+                                <input type="radio" name="parcela" id="parcela3">
+                                <label for="parcela3">3x de R$ 3,26 sem juros</label>
+                            </div>
 
-                            <label class="opcao-parcela">
-                                <input type="radio" name="parcela">
-                                <span>4x de R$ 2,45 sem juros</span>
-                            </label>
+                            <div class="opcao-parcela">
+                                <input type="radio" name="parcela" id="parcela4">
+                                <label for="parcela4">4x de R$ 2,45 sem juros</label>
+                            </div>
 
-                            <label class="opcao-parcela">
-                                <input type="radio" name="parcela">
-                                <span>6x de R$ 1,63 sem juros</span>
-                            </label>
-
+                            <div class="opcao-parcela">
+                                <input type="radio" name="parcela" id="parcela6">
+                                <label for="parcela6">6x de R$ 1,63 sem juros</label>
+                            </div>
                         </div>
-
                     </section>
-
                 </div>
 
                 <aside class="resumo-pedido">
-
                     <h2>🛒 Resumo do pedido</h2>
 
                     <div class="produto-resumo-pagamento">
@@ -263,12 +260,11 @@
                         <li>✅ Você ainda pode corrigir dados</li>
                         <li>🌱 Compra consciente: você combate o desperdício</li>
                     </ul>
-
                 </aside>
 
             </div>
 
-        </section>
+        </div>
 
     </main>
 </body>
