@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
 <body>
@@ -17,15 +18,24 @@
     <header class="navbar">
         <div class="container flex-nav">
 
+
             <div class="logo">
-                FIFO<span>MARKET</span>
+                <div class="logo-icon">
+                    <i class="fa-solid fa-cart-shopping" style="color: rgb(255, 255, 255);" id="car-logo"></i>
+                </div>
+                <div>
+                    FIFO
+                    <span>MARKET</span>
+                </div>
             </div>
+
+
 
             <div class="area-pesquisa">
                 <input type="text" class="campo-pesquisa" id="campoPesquisa" placeholder="Pesquisar produtos...">
 
                 <button type="button" class="botao-pesquisa" id="botaoPesquisa">
-                    🔍
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
 
@@ -46,11 +56,10 @@
                 </a>
 
                 <div class="carrinho" id="carrinho">
-
                     <a href="pages/carrinho.html" class="botao-carrinho" id="botaoCarrinho">
+                        <i class="fa-solid fa-cart-shopping"></i>
                         Carrinho
                     </a>
-
                 </div>
 
             </div>
@@ -294,14 +303,16 @@
             <div class="footer-grid">
 
                 <div class="footer-brand">
-                    <a href="#" class="logo">
-                        <div class="logo-icon">
-                            🛒
-                        </div>
-
-                        <div class="logo-text">
-                            <span class="fifo">FIFO</span>
-                            <span class="market">MARKET</span>
+                    <a href="#">
+                        <div class="logo">
+                            <div class="logo-icon">
+                                <i class="fa-solid fa-cart-shopping" style="color: rgb(255, 255, 255);"
+                                    id="car-logo"></i>
+                            </div>
+                            <div>
+                                <h3>FIFO</h3>
+                                <span>MARKET</span>
+                            </div>
                         </div>
                     </a>
 
@@ -312,16 +323,6 @@
                     </p>
                 </div>
 
-                <div class="footer-col">
-                    <h4>Categorias</h4>
-
-                    <a href="#">Grãos e Cereais</a>
-                    <a href="#">Laticínios</a>
-                    <a href="#">Hortifruti</a>
-                    <a href="#">Bebidas</a>
-                    <a href="#">Padaria</a>
-                    <a href="#">Ver todas</a>
-                </div>
 
                 <div class="footer-col">
                     <h4>FIFO Market</h4>

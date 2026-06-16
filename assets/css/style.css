@@ -54,41 +54,41 @@ body {
     gap: 24px;
 }
 
+
+
 .logo {
-    
-    color: #ffffff;
     display: flex;
-    flex-direction: column;
-    line-height: 0.9;
+    justify-content: center;
+    min-height: 46px;
+    color: #fff;
     font-size: 1.35rem;
     font-weight: 800;
-    position: relative;
-    padding-left: 52px;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    line-height: 1;
+    gap: 10px;
 }
 
-.logo::before {
-    content: "🛒";
+.logo-icon {
     width: 46px;
     height: 46px;
     background: var(--bg--amarelo);
     border-radius: 8px;
-    display: grid;
-    place-items: center;
-    font-size: 1.6rem;
-    position: absolute;
-    margin-left: -58px;
-    
+
+
+}
+
+
+.logo-icon i {
+    font-size: 1.2rem;
 }
 
 .logo span {
+    margin-top: 2px;
     font-size: 0.7rem;
     letter-spacing: 1px;
-    color: rgba(255, 255, 255, 0.438);
-    padding-top: 10px;
-    
+    color: rgba(255, 255, 255, 0.55);
 }
+
+
 
 .area-pesquisa {
     width: 100%;
@@ -170,8 +170,8 @@ body {
     gap: 6px;
 }
 
-.botao-carrinho::before {
-    content: "🛒";
+.botao-carrinho i {
+    font-size: 0.85rem;
 }
 
 .contador-carrinho {
@@ -209,7 +209,7 @@ body {
     background-color: var(--bg--backgroud);
 }
 
-.link-perfil{
+.link-perfil {
     color: white;
     text-decoration: none;
 }
@@ -245,12 +245,10 @@ body {
     height: 100%;
     left: 40%;
     top: 0;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.08),
-        transparent
-    );
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.08),
+            transparent);
 }
 
 .hero-text {
@@ -477,6 +475,8 @@ footer {
     margin-top: 80px;
 }
 
+
+
 .footer-inner {
     max-width: 1400px;
     margin: 0 auto;
@@ -525,6 +525,7 @@ footer {
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
+
 }
 
 .logo-text {
@@ -532,7 +533,7 @@ footer {
     flex-direction: column;
     line-height: 1;
     text-align: left;
-    
+
 }
 
 .fifo {
@@ -730,7 +731,7 @@ footer {
     align-items: center;
     justify-content: center;
     position: relative;
-    
+
 }
 
 .modal-imagem-produto img {
@@ -836,7 +837,7 @@ footer {
     margin-bottom: 24px;
 }
 
-.unidades-restantes{
+.unidades-restantes {
     color: var(--bg--vermelho);
 }
 
@@ -873,7 +874,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 18px;
-    box-shadow: 0 12px 25px rgba(0,0,0,.15);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, .15);
 }
 
 .avatar-loja {
