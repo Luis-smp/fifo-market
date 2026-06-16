@@ -26,6 +26,7 @@
         </aside>
         <main class="main">
             <header class="topbar">
+<button type="button" class="botao-menu" id="botaoMenu"><span></span><span></span><span></span></button>
                 <div class="hello"><strong>Olá, Mercado Verde</strong><span>Modo empresa · Demonstração
                         interativa</span></div>
                 <div class="search"><i>⌕</i><input placeholder="Buscar produto ou estoque..." /></div>
@@ -88,6 +89,17 @@
             </section>
         </main>
     </div>
+
+<script>
+const botaoMenu=document.getElementById('botaoMenu');
+const sidebar=document.querySelector('.sidebar');
+if(botaoMenu&&sidebar){
+botaoMenu.addEventListener('click',()=>{
+ botaoMenu.classList.toggle('ativo');
+ sidebar.classList.toggle('ativo');
+});
+}
+</script>
 </body>
 
 </html>

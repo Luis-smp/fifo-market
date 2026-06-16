@@ -32,6 +32,17 @@
             <p class="login-small">Ainda não possui cadastro? Solicite acesso empresarial.</p>
         </section>
     </div>
+
+<script>
+const botaoMenu=document.getElementById('botaoMenu');
+const sidebar=document.querySelector('.sidebar');
+if(botaoMenu&&sidebar){
+botaoMenu.addEventListener('click',()=>{
+ botaoMenu.classList.toggle('ativo');
+ sidebar.classList.toggle('ativo');
+});
+}
+</script>
 </body>
 
 </html>

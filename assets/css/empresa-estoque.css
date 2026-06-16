@@ -38,3 +38,29 @@
 @media(max-width:720px) {
   .metrics, .grid-3 { grid-template-columns: 1fr; }
 }
+
+
+/* RESPONSIVIDADE ESTOQUE */
+@media (max-width: 900px) {
+  .metrics,
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .metrics,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .metric {
+    min-height: auto;
+    padding: 18px;
+  }
+
+  .metric h2,
+  .metric h3 {
+    font-size: 1.8rem;
+  }
+}

@@ -501,3 +501,481 @@ textarea {
     grid-template-columns: 1fr;
   }
 }
+
+/* RESPONSIVIDADE GERAL */
+@media (max-width: 1100px) {
+  .topbar {
+    gap: 18px;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .page-head {
+    align-items: stretch;
+  }
+
+  .page-head .btn {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 720px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .app {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 18px 16px;
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .brand {
+    margin-bottom: 18px;
+  }
+
+  .brand h2,
+  .brand span,
+  .nav a span {
+    display: block;
+  }
+
+  .nav {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .nav a {
+    min-height: 44px;
+    justify-content: space-between;
+    padding: 0 12px;
+    font-size: 0.82rem;
+    border-radius: 12px;
+  }
+
+  .badge {
+    margin-left: 6px;
+  }
+
+  .topbar {
+    position: static;
+    width: 100%;
+    align-items: stretch;
+    gap: 14px;
+  }
+
+  .hello {
+    display: block;
+    min-width: 0;
+    flex: 1;
+  }
+
+  .hello strong {
+    font-size: 1rem;
+  }
+
+  .hello span {
+    font-size: 0.75rem;
+  }
+
+  .top-actions {
+    margin-left: 0;
+  }
+
+  .avatar {
+    width: 42px;
+    height: 42px;
+  }
+
+  .content {
+    padding: 22px 16px 40px;
+  }
+
+  .page-head {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .page-head h1 {
+    font-size: 1.8rem;
+  }
+
+  .page-head p {
+    font-size: 0.9rem;
+  }
+
+  .page-head .btn {
+    width: 100%;
+  }
+
+  .card {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .card-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-title .btn {
+    width: 100%;
+  }
+
+  .table {
+    min-width: 620px;
+  }
+
+  .card:has(.table) {
+    overflow-x: auto;
+  }
+
+  .product {
+    border-radius: 18px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions .btn {
+    width: 100%;
+  }
+
+  .price-row {
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .sidebar {
+    padding: 16px 12px;
+  }
+
+  .brand {
+    gap: 10px;
+  }
+
+  .logo-mark {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+  }
+
+  .brand h2 {
+    font-size: 1.25rem;
+  }
+
+  .brand span {
+    font-size: 0.72rem;
+  }
+
+  .nav {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    padding: 16px 12px;
+  }
+
+  .content {
+    padding: 18px 12px 34px;
+  }
+
+  .page-head h1 {
+    font-size: 1.55rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .product-img {
+    height: 125px;
+  }
+}
+
+
+.botao-menu {
+  display: none;
+  width: 46px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.botao-menu span {
+  width: 24px;
+  height: 2px;
+  background: #333;
+  border-radius: 999px;
+  transition: .3s;
+}
+
+.botao-menu.ativo span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.botao-menu.ativo span:nth-child(2) {
+  opacity: 0;
+}
+
+.botao-menu.ativo span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+
+  .botao-menu {
+    display: flex;
+  }
+
+  .sidebar {
+    display: none;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 280px;
+    height: calc(100vh - 90px);
+    z-index: 999;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+  }
+
+  .sidebar.ativo {
+    display: flex;
+  }
+
+  .topbar {
+    padding: 0 20px;
+    gap: 16px;
+  }
+
+  .content {
+    padding: 24px 20px 40px;
+  }
+
+  .hello {
+    min-width: auto;
+  }
+
+  .search {
+    max-width: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+  .app {
+    display: grid;
+    grid-template-columns: 272px 1fr;
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 0;
+    width: auto;
+    height: 100vh;
+    padding: 28px 22px;
+    border-right: 1px solid var(--line);
+    border-bottom: none;
+    box-shadow: none;
+    display: flex;
+  }
+
+  .brand h2,
+  .brand span,
+  .nav a span {
+    display: block;
+  }
+
+  .brand {
+    margin-bottom: 36px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+    gap: 8px;
+  }
+
+  .nav a {
+    min-height: 52px;
+    justify-content: flex-start;
+    padding: 0 16px;
+    font-size: 15px;
+  }
+
+  .badge {
+    margin-left: auto;
+  }
+
+  .topbar {
+    height: 90px;
+    padding: 0 46px;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .hello {
+    display: block;
+    min-width: 220px;
+  }
+
+  .search {
+    order: initial;
+    flex-basis: auto;
+    max-width: 540px;
+  }
+
+  .content {
+    padding: 34px 46px 60px;
+  }
+
+  .botao-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    display: block;
+  }
+
+  .topbar {
+    min-height: 86px;
+    height: auto;
+    padding: 14px 18px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .botao-menu {
+    display: flex;
+    flex: 0 0 46px;
+  }
+
+  .hello {
+    display: block;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .hello strong {
+    font-size: 1rem;
+  }
+
+  .hello span {
+    font-size: .75rem;
+  }
+
+  .top-actions {
+    margin-left: 0;
+  }
+
+  .search {
+    order: 4;
+    flex: 1 1 100%;
+    max-width: none;
+  }
+
+  .sidebar {
+    display: none;
+    position: fixed;
+    top: 130px;
+    left: 0;
+    width: min(280px, 82vw);
+    height: calc(100vh - 140px);
+    padding: 18px 16px;
+    z-index: 999;
+    background: #fff;
+    border-right: 1px solid var(--line);
+    border-bottom: none;
+    box-shadow: 12px 0 30px rgba(8, 24, 54, .12);
+    overflow-y: auto;
+  }
+
+  .sidebar.ativo {
+    display: flex;
+  }
+
+  .brand {
+    margin-bottom: 18px;
+  }
+
+  .brand h2,
+  .brand span,
+  .nav a span {
+    display: block;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav a {
+    justify-content: space-between;
+    min-height: 46px;
+    padding: 0 12px;
+  }
+
+  .badge {
+    margin-left: 8px;
+  }
+
+  .content {
+    padding: 22px 16px 40px;
+  }
+
+  .page-head,
+  .card-title {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .page-head .btn,
+  .card-title .btn,
+  .actions .btn,
+  .btn {
+    width: 100%;
+  }
+
+  .product-grid,
+  .metrics,
+  .grid-2,
+  .grid-3,
+  .hero,
+  .form-grid,
+  .filters {
+    grid-template-columns: 1fr !important;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}

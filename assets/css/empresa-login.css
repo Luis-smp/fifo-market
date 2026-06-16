@@ -81,3 +81,54 @@
   .login-brand { min-height: 360px; padding: 34px; }
   .login-form { padding: 34px; }
 }
+
+
+/* RESPONSIVIDADE LOGIN */
+@media (max-width: 900px) {
+  .login-card {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+  }
+
+  .login-brand {
+    min-height: auto;
+    padding: 36px;
+    gap: 28px;
+  }
+
+  .login-brand h1 {
+    font-size: 2rem;
+    margin: 28px 0 14px;
+  }
+
+  .login-form {
+    padding: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-body {
+    padding: 16px;
+  }
+
+  .login-card {
+    border-radius: 22px;
+  }
+
+  .login-brand,
+  .login-form {
+    padding: 26px 20px;
+  }
+
+  .login-brand h1 {
+    font-size: 1.7rem;
+  }
+
+  .login-form h2 {
+    font-size: 1.6rem;
+  }
+
+  .logo-box {
+    font-size: 1.2rem;
+  }
+}

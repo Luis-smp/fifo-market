@@ -97,3 +97,53 @@
 @media(max-width:720px) {
   .metrics { grid-template-columns: 1fr; }
 }
+
+
+/* RESPONSIVIDADE DASHBOARD */
+@media (max-width: 900px) {
+  .hero {
+    padding: 24px;
+  }
+
+  .hero h2 {
+    font-size: 1.7rem;
+  }
+
+  .hero-panel strong {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero {
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .hero h2 {
+    font-size: 1.45rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .hero-panel {
+    border-radius: 18px;
+  }
+
+  .metrics,
+  .grid-2,
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .metric {
+    min-height: auto;
+    padding: 18px;
+  }
+
+  .metric h3 {
+    font-size: 1.7rem;
+  }
+}
