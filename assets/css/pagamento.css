@@ -507,3 +507,18 @@ body {
         letter-spacing: 3px;
     }
 }
+/* Ajuste responsivo do link de voltar */
+.link-continuar {
+    white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+    .topo-pagamento {
+        gap: 12px;
+    }
+
+    .link-continuar {
+        align-self: flex-end;
+        font-size: 0.85rem;
+    }
+}

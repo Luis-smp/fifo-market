@@ -315,3 +315,21 @@ body {
         grid-template-columns: 1fr;
     }
 }
+/* Ajuste responsivo do link de voltar */
+.link-continuar {
+    white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+    .cabecalho-carrinho {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        align-items: start;
+    }
+
+    .link-continuar {
+        justify-self: end;
+        font-size: 0.85rem;
+    }
+}

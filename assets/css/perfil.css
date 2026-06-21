@@ -533,3 +533,178 @@ body {
         display: none;
     }
 }
+
+/* Ajustes responsivos - Perfil */
+.voltar-home,
+.link-continuar,
+.voltar-produto {
+    white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+    .pagina-perfil {
+        padding: 28px 10px 50px;
+    }
+
+    .perfil-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .cabecalho-perfil {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: start;
+        gap: 10px 12px;
+        margin-bottom: 22px;
+    }
+
+    .cabecalho-perfil > div:first-child {
+        min-width: 0;
+    }
+
+    .cabecalho-perfil h1 {
+        font-size: 1.75rem;
+        line-height: 1.05;
+        margin-bottom: 12px;
+    }
+
+    .topo-perfil {
+        margin-top: 2px;
+        justify-self: end;
+    }
+
+    .voltar-home {
+        font-size: 0.82rem;
+        line-height: 1.2;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .abas-perfil {
+        grid-column: 1 / -1;
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        padding-bottom: 4px;
+    }
+
+    .abas-perfil::-webkit-scrollbar {
+        display: none;
+    }
+
+    .aba-perfil {
+        flex: 0 0 auto;
+        padding: 8px 12px;
+        font-size: 0.82rem;
+    }
+
+    .banner-perfil {
+        min-height: 210px;
+        border-radius: 14px 14px 0 0;
+    }
+
+    .banner-perfil > img {
+        height: 210px;
+    }
+
+    .dados-usuario {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 22px 18px;
+        background: linear-gradient(180deg, transparent, rgba(0,0,0,.65));
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .avatar-usuario {
+        width: 86px;
+        height: 86px;
+    }
+
+    .dados-usuario h2 {
+        font-size: 1.35rem;
+    }
+
+    .estatisticas-perfil {
+        padding: 20px 16px;
+        gap: 0;
+    }
+
+    .grid-perfil,
+    .historico-perfil {
+        width: 100%;
+    }
+
+    .card-perfil,
+    .historico-perfil {
+        padding: 18px;
+        border-radius: 14px;
+    }
+
+    .timeline-pedido {
+        padding: 18px;
+    }
+
+    .etapas-pedido {
+        align-items: stretch;
+        gap: 0;
+        padding-left: 8px;
+    }
+
+    .etapas-pedido::before {
+        display: block;
+        left: 20px;
+        right: auto;
+        top: 18px;
+        bottom: 18px;
+        width: 2px;
+        height: auto;
+    }
+
+    .etapa-pedido {
+        min-height: 58px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 14px;
+        font-size: 0.82rem;
+    }
+
+    .etapa-pedido::before {
+        flex: 0 0 24px;
+    }
+
+    .card-pedido {
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .card-pedido strong {
+        font-size: 1.6rem;
+    }
+
+    .acoes-pedido {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .acoes-pedido button:only-child {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 380px) {
+    .cabecalho-perfil {
+        grid-template-columns: 1fr;
+    }
+
+    .topo-perfil {
+        justify-self: start;
+    }
+}

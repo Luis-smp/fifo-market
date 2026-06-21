@@ -356,3 +356,15 @@ body {
 .btn-entrar:hover {
     background: #256b2a;
 }
+/* Ajuste responsivo do link de voltar */
+.voltar {
+    white-space: nowrap;
+}
+
+@media (max-width: 420px) {
+    .voltar {
+        top: 18px;
+        left: 18px;
+        font-size: 0.9rem;
+    }
+}
