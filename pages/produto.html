@@ -62,7 +62,7 @@
 
                     <p class="preco-de">De: <s>R$ 5,99</s></p>
 
-                    <strong class="preco-modal">R$ 2,99</strong>
+                    <strong class="preco-modal" id="preco"">R$ 2,99</strong>
 
                     <div class="economia-modal">
                         ✔ Você economiza R$ 3,00 nesta compra
@@ -73,15 +73,15 @@
                     <div class="variantes-produto">
                         <p>Quantidade / Variante</p>
 
-                        <button type="button">1 un.</button>
-                        <button type="button">2 un. <small>-5%</small></button>
-                        <button type="button">3 un. <small>-10%</small></button>
+                        <button type="button" id="adicao1">1 un.</button>
+                        <button type="button" id="adicao2">2 un. <small>-5%</small></button>
+                        <button type="button" id="adicao3" >3 un. <small>-10%</small></button>
                     </div>
 
                     <div class="quantidade-modal">
-                        <button type="button">-</button>
-                        <span>1</span>
-                        <button type="button">+</button>
+                        <button type="button" id="subtracao">-</button>
+                        <span id="number">0</span>
+                        <button type="button" id="adicao">+</button>
                     </div>
 
                     <ul class="lista-beneficios">
@@ -136,7 +136,10 @@
         </section>
 
     </main>
+    <script src="../assets/js/script.js"></script>
 
 </body>
+
+
 
 </html>
